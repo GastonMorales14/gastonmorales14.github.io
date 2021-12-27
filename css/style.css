@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+p{
+    text-align: center;
+}
+h1,h2,h3,p,a{
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    color: #08fdd8;
+}
+
+
+
+/*----------------------header--------------------*/
+
+h1{
+    width: 50%;
+    color: transparent;
+    -webkit-text-stroke: 1px #08fdd8;
+}
+.btn_menu{
+    width:20%;
+}
+h1 img{
+    width: 40%;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    background-color: black;
+}
+
+button .btn_menu {
+    color: white;
+    padding: 15px;
+}
+
+button .btn_menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    border-bottom: 4px solid #08fdd8;
+    width: 100%;
+    display: flex;
+    background-color: black; 
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+/* si tiene tambien la clase show */
+ul.navigation.show {
+    display: flex;
+}
+
+ul.navigation li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    margin: 0px 0px;
+    padding: 15px 20px;
+    border: 1px solid rgb(165, 165, 165);
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li a:hover {
+    
+    color: #08fdd8;
+}
+ul.navigation li:hover{
+   background-color: rgb(41, 40, 40);
+}
+
+header{
+    position: fixed;
+}
+
+
+/*---------------------------presentacion ---------------------------*/
+
+
+.presentation{
+    width: 100%;
+    padding: 15%;
+    text-align: center; 
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+    background: -webkit-linear-gradient(to right, #08fdd8, #08fdd8, #08fdd8), url(/images/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #08fdd846, #181818, #08fdd846), url(/images/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.presentation h2{
+    padding-top: 20%;
+    color: #fff;
+}
+.presentation .arrows{
+    width: 100%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/*  animation (buscar) */
+
+
+
+/* ----------------------------- history --------------------------------*/
+.history{
+    width: 100%;
+    padding-top: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d1d1d;
+}
+.history h2{
+    margin: 3%;
+}
+.history-left{
+    display: flex;
+    justify-content: center;
+}
+.history .history-left img {
+   width: 60%;
+ 
+}
+.history-right, .history-left{
+    padding: 2%;
+}
+.history-right a{
+    color: #08fdd8;
+}
+.container-history .history-left img{
+    border-radius: 40px;
+    background: #1d1d1d;
+    box-shadow:  -10px -10px 20px #656565,
+    10px 10px 20px #ffffff;
+}
+
+/* ---------------SKILLS---------------------*/
+.skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 24%;
+    background-color: #1d1d1d;
+}
+.skills h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+    
+}
+.container-skills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.container-skills .skill img{
+    width: 150px;
+    height: 150px;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+
+/* ---------------CONTACT---------------------*/
+.contact{
+    background-color: #1d1d1d;
+    padding: 2%;
+    padding-top: 24%;
+    
+}
+.contact h2{
+    color: #08fdd8;
+    text-align: center;
+    margin-top: 3%;
+}
+.form-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.form-contact form input, textarea {
+    background-color: transparent;
+    padding: 2%;
+    width: 90%;
+    height: 50px;
+    border: 1px solid black;
+    color: white;
+    margin: 1% 0%;
+}
+.form-contact form textarea{
+    min-height: 120px;
+}
+.img-redes-sociales{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 5%;
+}
+.form-contact form button{
+    text-decoration: none;  
+    padding: 8px 20px;
+    background: #000;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-weight: 400;
+    color:#fff;
+}
+.form-contact form button:hover{
+background-color: #08fdd8;
+color: #000;
+}
+.contact .img-redes-sociales a img{
+    width: 50px;
+    height: 50px;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+
+@media screen and (min-width: 960px){
+
+    /*----------------------history------------------------*/
+    .history{
+        padding-top: 9%;
+    }
+    .container-history{
+        padding-bottom: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .history-right, .history-left{
+        width: 50%;
+    }
+    .history-right{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 660px){
+
+    /* -------------header -----------------*/
+
+    /* en desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+       display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+   /* cambiamos la direccion del flex (pasamos de column a row) */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h1 img{
+        width: 10%;
+    }
+    
+
+    /*-------------------presentacion-------------------*/
+
+    .presentation{
+        background: -webkit-linear-gradient(to right, #08fdd8, #08fdd8, #08fdd8), url(/images/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #08fdd846, #181818, #08fdd846), url(/images/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-position: center;
+        background-size: cover;
+        height: 850px;
+    }
+    .presentation h2{
+        font-size: 40px;
+    }
+
+    
+
+    /* ------------------------- skills ---------------------------*/
+    .skills{
+        padding-top: 9%;
+    }
+    .container-skills{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .skill{
+       margin: 2% 7%;
+    }
+    
+    .container-skills .skill img{
+        width: 150px;
+        height: 150px;
+        padding: 5%;
+
+    }
+
+    /* ---------------CONTACT---------------------*/
+    .contact{
+        padding-top: 9%;
+    }
+    .contact .form-contact{
+        width: 60%;
+        margin: 0% 20%;
+    }
+
+    .contact .img-redes-sociales a img{
+        width: 80px;
+        height: 80px;
+        padding: 5%;
+        border-radius: 50px;
+    }
+    
+    
+   
+    
+}
