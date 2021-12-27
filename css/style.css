@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Playfair+Display:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@ p{
     text-align: center;
 }
 h1,h2,h3,p,a{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Merriweather', serif;
 }
 h2{
     color: #08fdd8;
@@ -246,6 +248,64 @@ color: #000;
     padding: 5%;
     border-radius: 50px;
 }
+#trucazo{
+    opacity: 0;
+}
+
+ /*----------------------proyects------------------------*/
+ .proyects-container{
+    background-color: #1d1d1d;
+    padding-top: 24%;
+ }
+ .proyects-container h2{
+    text-align: center;
+    margin-top: 3%;
+}
+
+ .proyects .proyect img{
+    width: 330px;
+    height: 220px;
+ }
+
+ .proyects{
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+    
+ }
+
+ .proyects .proyect {
+     width: 330px;
+     height: 430px;
+     border-radius: 4%;
+     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+     overflow: hidden;
+     margin: 2%;
+     text-align: center;
+     transition: all 0.25s;
+ }
+
+ .proyects .proyect:hover {
+     transform: translateY(-15px);
+     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+ }
+
+ .proyects .proyect h4{
+     font-weight: 600;
+ }
+
+.proyects .proyect p{
+    padding: 10% 2%;
+    font-weight: 300;
+}
+
+.proyects .proyect a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #08fdd8;
+}
+
 
 
 @media screen and (min-width: 960px){
@@ -348,6 +408,13 @@ color: #000;
         padding: 5%;
         border-radius: 50px;
     }
+
+    /*----------------------proyects------------------------*/
+    
+    .proyects-container{
+        padding-top: 9%;
+    }
+
     
     
    
