@@ -126,7 +126,7 @@ header{
 }
 
 
-/*  animation (buscar) */
+
 
 
 
@@ -147,7 +147,8 @@ header{
     justify-content: center;
 }
 .history .history-left img {
-   width: 60%;
+    width: 330px;
+    height: 330px;
  
 }
 .history-right, .history-left{
