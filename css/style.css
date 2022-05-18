@@ -311,12 +311,12 @@ background-color: rgba(245, 245, 245);
     padding-top: 50px;
 }
 #contact .container .container-contact .form-contact{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 
 #contact .container .redes .container{
-    padding-top: 30px;
+    padding-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
