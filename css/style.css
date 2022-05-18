@@ -1,423 +1,518 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Playfair+Display:wght@500&display=swap');
-
 *{
+    box-sizing: border-box;/*cuando le doy un mg o pd los elementos no crecen mas alla del tamaño que le doy*/
     margin: 0;
-    padding: 0;
-    color: aliceblue;
+    font-family: 'Goldman', cursive;
 }
-p{
-    text-align: center;
+html{
+    scroll-behavior: smooth;
 }
-h1,h2,h3,p,a{
-    font-family: 'Merriweather', serif;
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:white;
+}
+
+
+
+
+
+/*tamaño de fuentes*/
+h1{
+    font-size: 2.3em;
 }
 h2{
-    color: #08fdd8;
+    font-size: 2.3em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
 }
 
+/*botones*/
 
-
-/*----------------------header--------------------*/
-
-h1{
-    width: 50%;
-    color: transparent;
-    -webkit-text-stroke: 1px #08fdd8;
-}
-.btn_menu{
-    width:20%;
-}
-h1 img{
-    width: 40%;
-}
-
-.logo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 10px;
-    background-color: black;
-}
-
-button .btn_menu {
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 15px;
+    background-color: #06BC9B;
 }
 
-button .btn_menu a{
-    color: white;
-    text-decoration: none;
+button:hover{
+    background-color: #06413e;
 }
 
-.menu {
-    border-bottom: 4px solid #08fdd8;
-    width: 100%;
-    display: flex;
-    background-color: black; 
-}
-
-ul.navigation {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    display: none;
-    flex-direction: column;
-}
-
-/* si tiene tambien la clase show */
-ul.navigation.show {
-    display: flex;
-}
-
-ul.navigation li {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    list-style: none;
-    margin: 0px 0px;
-    padding: 15px 20px;
-    border: 1px solid rgb(165, 165, 165);
-}
-
-ul.navigation li a {
-    text-decoration: none;
-    color: white;
-}
-
-ul.navigation li a:hover {
-    
-    color: #08fdd8;
-}
-ul.navigation li:hover{
-   background-color: rgb(41, 40, 40);
-}
+/*HEADER*/
 
 header{
-    position: fixed;
+    background-color: rgba(245, 245, 245);
 }
 
 
-/*---------------------------presentacion ---------------------------*/
-
-
-.presentation{
-    width: 100%;
-    padding: 15%;
-    text-align: center; 
-    height: 800px;
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: #064F4B;
+    font-size: 1.6em;
+}
+header .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    align-items: center; 
-    background: -webkit-linear-gradient(to right, #08fdd8, #08fdd8, #08fdd8), url(/images/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #08fdd846, #181818, #08fdd846), url(/images/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    align-items: center;
 }
-.presentation h2{
-    padding-top: 20%;
-    color: #fff;
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
 }
-.presentation .arrows{
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #06BC9B;
+}
+header a:hover{
+    color: #064F4B;
+}
+
+
+
+/*hero*/
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /*cambia x cada dispositivo la altura*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/FondoHeroz75J240j_4x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+}
+#hero button{
+font-size: 1.75em;
+}
+#hero a{
+    padding-top: 30px;
+}
+#hero a button {
+    color:white;
+    text-decoration: none;
+}
+
+/*ABOUT_ME*/
+
+
+
+#about_me{
+height: 100vh;
+background-color: rgba(245, 245, 245);
+}
+
+
+
+#about_me .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+#about_me .container h2{
+    color:#06BC9B;
+    padding-bottom: 50px;
+}
+#about_me .container p{
+    color:#63707e;
+}
+#about_me .container p a{
+    color:#06BC9B;
+    text-decoration: none;
+}
+
+
+
+
+
+/*PROYECTS*/
+
+#Proyects{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Proyects .container{
+    padding: 50px 0px;
+}
+
+#Proyects h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 3.2em;
+    color: #06BC9B;
+}
+
+#Proyects p{
+    display: none;
+}
+
+#Proyects .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*selecciono el primer proyecto con first-child*/
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/HD-wallpaper-football-fifa.jpg);
+    
+}
+
+/*selecciono el segundo proyecto con nth-child(2)*/
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/Calculadora-1024x538.jpg);
+}
+
+/*selecciono el segundo proyecto con nth-child(3)*/
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/sorte-roulette-wheel-wallpaper-preview.jpg);
+}
+
+/*selecciono el segundo proyecto con nth-child(4)*/
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/escudobaby.png);
+}
+
+/*selecciono el segundo proyecto con nth-child(5)*/
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/CLIMAAaper-weather-abej-beograd-rain.jpg);
+}
+
+
+/*SKILLS*/
+#skills{
+    background-color: rgba(245, 245, 245);
+}
+#skills .container{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+#skills .container h2{
     width: 100%;
-    padding-top: 15%;
+    margin-top: 0; 
+    font-size: 3.2em;
+    color: #06BC9B;
+}
+
+.skill{
+    width: 50%;
+}
+.skill img{
+    width: 70px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+#skills .container p{
+    padding-top: 10px;
+    font-size: 0.7em;
+    color: #63707e;
+}
+
+
+
+/*FOOTER*/
+#contact {
+    background-color: rgba(30,30,30);
+    color: white; 
+    height: 100vh;
+}
+#contact .container{
+    padding-top: 10px;
+}
+#contact .container h2{
+    color: #06BC9B;
+}
+#contact .container .container-contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+#contact .container .container-contact .form-contact{
+    padding-top: 30px;
+}
+
+
+#contact .container .redes .container{
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-
-
-
-
-
-/* ----------------------------- history --------------------------------*/
-.history{
-    width: 100%;
-    padding-top: 24%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1d1d1d;
-}
-.history h2{
-    margin: 3%;
-}
-.history-left{
-    display: flex;
-    justify-content: center;
-}
-.history .history-left img {
-    width: 330px;
-    height: 330px;
- 
-}
-.history-right, .history-left{
-    padding: 2%;
-}
-.history-right a{
-    color: #08fdd8;
-}
-.container-history .history-left img{
-    border-radius: 40px;
-    background: #1d1d1d;
-    box-shadow:  -10px -10px 20px #656565,
-    10px 10px 20px #ffffff;
-}
-
-/* ---------------SKILLS---------------------*/
-.skills{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 24%;
-    background-color: #1d1d1d;
-}
-.skills h2{
-    width: 100%;
-    text-align: center;
-    margin-top: 3%;
-    
-}
-.container-skills{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    
-}
-
-.container-skills .skill img{
-    width: 150px;
-    height: 150px;
-    padding: 5%;
-    border-radius: 50px;
-}
-
-
-/* ---------------CONTACT---------------------*/
-.contact{
-    background-color: #1d1d1d;
-    padding: 2%;
-    padding-top: 24%;
-    
-}
-.contact h2{
-    color: #08fdd8;
-    text-align: center;
-    margin-top: 3%;
-}
-.form-contact form{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
-.form-contact form input, textarea {
-    background-color: transparent;
-    padding: 2%;
-    width: 90%;
-    height: 50px;
-    border: 1px solid black;
-    color: white;
-    margin: 1% 0%;
+.redes h2{
+    text-align: center;
 }
-.form-contact form textarea{
-    min-height: 120px;
+.redes{
+    padding-top: 30px;
+    margin: 0;
 }
-.img-redes-sociales{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 5%;
+
+.red img{
+    width: 40px;
+    padding-bottom: 2em;
+    margin: 0px 10px;
 }
-.form-contact form button{
-    text-decoration: none;  
-    padding: 8px 20px;
-    background: #000;
-    border-radius: 20px;
-    margin-top: 15px;
-    font-weight: 400;
-    color:#fff;
-}
-.form-contact form button:hover{
-background-color: #08fdd8;
-color: #000;
-}
-.contact .img-redes-sociales a img{
-    width: 50px;
-    height: 50px;
-    padding: 5%;
-    border-radius: 50px;
-}
-#trucazo{
+
+#hideEmail{
     opacity: 0;
 }
 
- /*----------------------proyects------------------------*/
- .proyects-container{
-    background-color: #1d1d1d;
-    padding-top: 24%;
- }
- .proyects-container h2{
-    text-align: center;
-    margin-top: 3%;
-}
-
- .proyects .proyect img{
-    width: 330px;
-    height: 220px;
- }
-
- .proyects{
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: center;
-     align-items: center;
-    
- }
-
- .proyects .proyect {
-     width: 330px;
-     height: 430px;
-     border-radius: 4%;
-     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-     overflow: hidden;
-     margin: 2%;
-     text-align: center;
-     transition: all 0.25s;
- }
-
- .proyects .proyect:hover {
-     transform: translateY(-15px);
-     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
- }
-
- .proyects .proyect h4{
-     font-weight: 600;
- }
-
-.proyects .proyect p{
-    padding: 10% 2%;
-    font-weight: 300;
-}
-
-.proyects .proyect a{
-    font-weight: 500;
-    text-decoration: none;
-    color: #08fdd8;
-}
 
 
 
-@media screen and (min-width: 960px){
-
-    /*----------------------history------------------------*/
-    .history{
-        padding-top: 9%;
-    }
-    .container-history{
-        padding-bottom: 10%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .history-right, .history-left{
-        width: 50%;
-    }
-    .history-right{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-    }
-}
-
-
-
-
-@media screen and (min-width: 660px){
-
-    /* -------------header -----------------*/
-
-    /* en desktop ocultamos siempre el boton del menu */
-    .btn_menu {
-       display: none;
-    }
-
+@media(min-width: 770px){
     header{
+        position: fixed;
         width: 100%;
     }
-   /* cambiamos la direccion del flex (pasamos de column a row) */
-    ul.navigation {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #about_me .container{
+        padding: 200px 12px;
+    }
+
+    #Proyects .container{
+        padding: 100px 0px;
+    }
+
+    #skills .container{
+        padding-top: 100px;
+    }
+
+    .skill{
+        width: 30%;
+    }
+
+   
+
+    
+
+   
+   
+   
+
+
+
+
+}
+
+@media(min-width: 992px){
+
+    /* HERO */
+
+    #hero h1{
+        padding-top: 50px;
+        font-size: 3em;
+    }
+
+
+    /* PROYECTS */
+
+
+    #Proyects .proyectitos{
+       display: flex;
+       flex-flow: row wrap;
+       align-items: center;
+       justify-content: center;
+    }
+
+    #Proyects h2{
+        font-size: 4em;
+    }
+
+    #Proyects h3{
+        margin: 0;
+    }
+
+    #Proyects p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #Proyects .carta{
+      padding: 80px;
+      background-position-y: 0;
+      min-width: 300px;
+      max-width: 400px;
+      min-height: 400px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .skill{
+        width: 25%;
+    }
+
+
+    #contact .container{
+        padding-top: 100px;
+    }
+
+    #contact .container .container-contact{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+    }
+    #contact .container .container-contact .mitad{
+        width: 70%;
+    }
+    #contact .container .container-contact .redes{
+        width: 20%;
     }
 
-    h1 img{
-        width: 10%;
-    }
-    
-
-    /*-------------------presentacion-------------------*/
-
-    .presentation{
-        background: -webkit-linear-gradient(to right, #08fdd8, #08fdd8, #08fdd8), url(/images/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #08fdd846, #181818, #08fdd846), url(/images/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background-position: center;
-        background-size: cover;
-        height: 850px;
-    }
-    .presentation h2{
-        font-size: 40px;
-    }
-
-    
-
-    /* ------------------------- skills ---------------------------*/
-    .skills{
-        padding-top: 9%;
-    }
-    .container-skills{
+    #contact .container .redes .container{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-    .skill{
-       margin: 2% 7%;
-    }
-    
-    .container-skills .skill img{
-        width: 150px;
-        height: 150px;
-        padding: 5%;
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    /* ---------------CONTACT---------------------*/
-    .contact{
-        padding-top: 9%;
-    }
-    .contact .form-contact{
-        width: 60%;
-        margin: 0% 20%;
-    }
-
-    .contact .img-redes-sociales a img{
-        width: 80px;
-        height: 80px;
-        padding: 5%;
-        border-radius: 50px;
-    }
-
-    /*----------------------proyects------------------------*/
-    
-    .proyects-container{
-        padding-top: 9%;
-    }
-
-    
-    
-   
-    
 }
+
+@media(min-width: 1200px){
+
+    #about_me .container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 120px;
+    }
+
+    #about_me .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #about_me h2{
+        margin: 0px;
+    }
+
+    /* ABOUT_ME */
+
+
+    #about_me .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #about_me .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #about_me h2{
+        margin: 0px;
+    }
+
+    #about_me .img-container{
+        background-image: url(/images/tonga2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 450px;
+    }
+
+}
+
+
+
