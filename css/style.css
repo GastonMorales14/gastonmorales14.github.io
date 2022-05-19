@@ -18,6 +18,9 @@ a{
 a:hover{
     color:white;
 }
+p, input, textarea{
+    font-family: sans-serif;
+}
 
 
 
