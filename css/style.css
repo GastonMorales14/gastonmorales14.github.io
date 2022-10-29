@@ -281,11 +281,11 @@ background-color: rgba(245, 245, 245);
 }
 .skill img{
     width: 70px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
 #skills .container p{
