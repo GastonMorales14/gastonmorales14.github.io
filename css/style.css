@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;/*cuando le doy un mg o pd los elementos no crecen mas alla del tamaño que le doy*/
     margin: 0;
-    font-family: 'Goldman', cursive;
+    font-family: Varela Round;
 }
 html{
     scroll-behavior: smooth;
