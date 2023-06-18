@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;/*cuando le doy un mg o pd los elementos no crecen mas alla del tamaño que le doy*/
+    margin: 0;
+    font-family: Varela Round;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:white;
+}
+p, input, textarea{
+    font-family: sans-serif;
+}
+
+
+
+
+
+/*tamaño de fuentes*/
+h1{
+    font-size: 2.3em;
+}
+h2{
+    font-size: 2.3em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
+}
+
+/*botones*/
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #06BC9B;
+}
+
+button:hover{
+    background-color: #06413e;
+}
+
+/*HEADER*/
+
+header{
+    background-color: rgba(245, 245, 245);
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: #064F4B;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #06BC9B;
+}
+header a:hover{
+    color: #064F4B;
+}
+
+
+
+/*hero*/
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /*cambia x cada dispositivo la altura*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/FondoHeroz75J240j_4x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#hero h1{
+    color: white;
+}
+#hero button{
+font-size: 1.75em;
+}
+#hero a{
+    padding-top: 30px;
+}
+#hero a button {
+    color:white;
+    text-decoration: none;
+}
+
+/*ABOUT_ME*/
+
+
+
+#about_me{
+height: 100vh;
+background-color: rgba(245, 245, 245);
+}
+
+
+
+#about_me .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+#about_me .container h2{
+    color:#06BC9B;
+    padding-bottom: 50px;
+}
+#about_me .container p{
+    color:#63707e;
+}
+#about_me .container p a{
+    color:#06BC9B;
+    text-decoration: none;
+}
+
+
+
+
+
+/*PROYECTS*/
+
+#Proyects{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Proyects .container{
+    padding: 50px 0px;
+}
+
+#Proyects h2{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 3.2em;
+    color: #06BC9B;
+}
+
+#Proyects p{
+    display: none;
+}
+
+#Proyects .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/*selecciono el primer proyecto con first-child*/
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/HD-wallpaper-football-fifa.jpg);
+    
+}
+
+/*selecciono el segundo proyecto con nth-child(2)*/
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/Calculadora-1024x538.jpg);
+}
+
+/*selecciono el segundo proyecto con nth-child(3)*/
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/sorte-roulette-wheel-wallpaper-preview.jpg);
+}
+
+/*selecciono el segundo proyecto con nth-child(4)*/
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/escudobaby.png);
+}
+
+/*selecciono el segundo proyecto con nth-child(5)*/
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+    ,url(/images/CLIMAAaper-weather-abej-beograd-rain.jpg);
+}
+
+
+/*SKILLS*/
+#skills{
+    background-color: rgba(245, 245, 245);
+}
+#skills .container{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+#skills .container h2{
+    width: 100%;
+    margin-top: 0; 
+    font-size: 3.2em;
+    color: #06BC9B;
+}
+
+.skill{
+    width: 50%;
+}
+.skill img{
+    width: 70px;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+#skills .container p{
+    padding-top: 10px;
+    font-size: 0.7em;
+    color: #63707e;
+}
+
+
+
+/*FOOTER*/
+#contact {
+    background-color: rgba(30,30,30);
+    color: white; 
+    height: 100vh;
+}
+#contact .container{
+    padding-top: 10px;
+}
+#contact .container h2{
+    color: #06BC9B;
+}
+#contact .container .container-contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+/* #contact .container .container-contact .form-contact{
+    padding-top: 15px;
+} */
+
+
+#contact .container .redes .container{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.redes h2{
+    text-align: center;
+}
+.redes{
+    padding-top: 30px;
+    margin: 0;
+}
+
+.red img{
+    width: 40px;
+    padding-bottom: 2em;
+    margin: 0px 10px;
+}
+
+#hideEmail{
+    opacity: 0;
+}
+
+
+
+
+@media(min-width: 770px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #about_me .container{
+        padding: 200px 12px;
+    }
+
+    #Proyects .container{
+        padding: 100px 0px;
+    }
+
+    #skills .container{
+        padding-top: 100px;
+    }
+
+    .skill{
+        width: 30%;
+    }
+
+   
+
+    
+
+   
+   
+   
+
+
+
+
+}
+
+@media(min-width: 992px){
+
+    /* HERO */
+
+    #hero h1{
+        padding-top: 50px;
+        font-size: 3em;
+    }
+
+
+    /* PROYECTS */
+
+
+    #Proyects .proyectitos{
+       display: flex;
+       flex-flow: row wrap;
+       align-items: center;
+       justify-content: center;
+    }
+
+    #Proyects h2{
+        font-size: 4em;
+    }
+
+    #Proyects h3{
+        margin: 0;
+    }
+
+    #Proyects p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #Proyects .carta{
+      padding: 80px;
+      background-position-y: 0;
+      min-width: 300px;
+      max-width: 400px;
+      min-height: 400px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .skill{
+        width: 25%;
+    }
+
+
+    #contact .container{
+        padding-top: 100px;
+    }
+
+    #contact .container .container-contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    #contact .container .container-contact .mitad{
+        width: 70%;
+    }
+    #contact .container .container-contact .redes{
+        width: 20%;
+    }
+
+    #contact .container .redes .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(min-width: 1200px){
+
+    #about_me .container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 120px;
+    }
+
+    #about_me .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #about_me h2{
+        margin: 0px;
+    }
+
+    /* ABOUT_ME */
+
+
+    #about_me .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #about_me .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #about_me h2{
+        margin: 0px;
+    }
+
+    #about_me .img-container{
+        background-image: url(/images/tonga.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 450px;
+    }
+
+}
+
+
+
